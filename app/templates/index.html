@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Healthy Harvest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://use.fontawesome.com/e0cb98a9dc.js"></script>
+  </head>
+  <body>
+
+  <div id="google_translate_element" style="z-index:7;position:fixed;top:70px;right:70px;"></div>
+
+  <div class="container">
+
+    <div class="section-1" id="section-1">
+      <div class="section-1-video">
+        <video src="{% static 'videos/v3.mp4' %}" autoplay muted loop>
+
+        </video>
+      </div>
+
+      <div class="section-1-info">
+
+
+
+        <div class="section-1-info-1">
+          <span>Welcome to</span>
+          <h2>HEALTHY HARVEST </h2>
+          <p><b>Healthy Harvest</b> is a one stop solution for farmers. Staring off with <b>Healthy Harvest</b> ensures healthy crops for farmers.</p>
+        </div>
+        <div class="section-1-info-2 ">
+          <h2>GETTING STARTED ?</h2>
+          <button type="button" name="button" id="take-demo-button">Take Demo</button>
+          <button type="button" name="button" id="explore-btn">Explore</button>
+        </div>
+        <div id="google_translate_element"></div>
+      </div>
+
+    </div>
+
+    <div class="section-2" id="section-2">
+
+      <div class="section-1-video section-2-video">
+        <video src="{% static 'videos/v1.mp4' %}" autoplay muted loop>
+
+        </video>
+      </div>
+
+      <div class="section-2-info">
+        <div class="section-2-info-container">
+          <div class="section-2-info-header">
+            <img src="{% static 'videos/backarrow.png' %}" alt="" class="back-btn" id="back2">
+            <h2>Introduction</h2>
+          </div>
+          <p>
+            Agriculture is vital for the development of the world. We, humans, benefit from agriculture one way or the other, which has made agriculture a key area of study. If we look into our country's agriculture , it's plagued by several problems like selection of proper crops for farming, getting good quality seeds , pest attacks , low yield etc. The inaccessible information and knowledge is a handicap in the lives of farmers. The problems faced by farmers go unnoticed in the entire process of agriculture. Funded Farmers aims at identifying the challenges the farmer face in their day to day life and providing them with a solution using Artificial Intelligence.
+            <br><br>
+            There is no point in producing something unless someone wants to buy it. Sometimes the farmers fail to choose the right crop that is having high demand in the market and face loss by selling their hard work at a very low price. "Healthy Harvest” here helps them access all the information very easily using an app in their local language. By analyzing the location of the farmer , the environment variables , soil conditions and market demand we will suggest the right crop for their farm that will maximize farmer’s yield and profits. Also , it will tell the farmers about conditions and requirements if they are willing to grow any particular crop of their choice.
+  Often farmers are cheated by seed sellers and they don’t get value for money products. Buying poor quality seeds often results in poor yield of crops and the farmers have to face big losses. "Healthy Harvest" will help farmers in detecting the quality of seeds by studying the shape , size, color , weight and other variables. It will also suggest authorized places from where they can buy good quality seeds at reasonable rates.
+  <br><br>
+  One big problem that almost every farmer faces is that they fail to keep an eye on the field 24X7 and because of that some crops are destroyed by animals , pests , etc. "Healthy harvest" helps the farmers in continuous monitoring of their farm with a smart drone. The drone at regular intervals moves around the farm capturing images of all parts of the field and analyzing if the process is in line based on the density of crops , color etc. Incase of any animals in the field or pest attacks detected it alerts the farmer instantly .Updates and suggestions to maximize the yield at every point is sent to the farmers over the interface.
+
+          </p>
+          <div class="next-page-container">
+            <button type="button" name="button" class="next-btn" id="next2">Next</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="section-3" id="section-3">
+
+      <div class="section-1-video section-2-video">
+        <video src="{% static 'videos/v1.mp4' %}" autoplay muted loop>
+
+        </video>
+      </div>
+
+      <div class="section-2-info">
+        <div class="section-2-info-container">
+
+
+          <div class="section-2-info-header">
+            <img src="{% static 'videos/backarrow.png' %}" alt="" class="back-btn" id="back3">
+            <h2>Crop Prediction</h2>
+          </div>
+          <p>In a country like India, which has ever increasing demand of food due to rising population, advances in agriculture sector are required to meet the needs. Nowadays, modern people don’t have awareness about the cultivation of the crops in a right time and at a right place.
+            In this project, a software is created which will analyse data of four parameters that are temperature, humidity, pH of the soil and the rainfall. The patterns, associations, or relationships among all this data can provide information to predict the crop accurately. The output is basically the crop names which will be the most profitable to grow in that soil taking into consideration the various parameters.
+            This makes the farmers to take the right decision for right crop.</p>
+          <form class=""  method="post" id="predict-crop-form">
+            <input type="text" name="" value="" id="temperature" placeholder="Temperature (eg:- 27.32)">
+            <input type="text" name="" value="" id="humidity" placeholder="Humidity (eg:- 80 )">
+            <input type="text" name="" value="" id="pH" placeholder="pH (eg:- 6.55)">
+            <input type="text" name="" value="" id="rainfall" placeholder="Rainfall (eg:- )">
+            <br>
+            <button type="button" name="button" id="predict-crop-btn">Predict Crop</button>
+          </form>
+          <p id="predicted-crop"></p>
+          <p>As of now we are taking only 4 factors into consideration. On a big picture our research is going on other factors like soil content , market research etc.</p>
+          <div class="next-page-container">
+            <button type="button" name="button" class="next-btn" id="next3">Next</button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="section-4" id="section-4">
+
+      <div class="section-1-video section-2-video">
+        <video src="{% static 'videos/v1.mp4' %}" autoplay muted loop>
+
+        </video>
+      </div>
+
+      <div class="section-2-info">
+        <div class="section-2-info-container">
+
+
+          <div class="section-2-info-header">
+            <img src="{% static 'videos/backarrow.png' %}" alt="" class="back-btn" id="back4">
+            <h2>Seed Quality</h2>
+          </div>
+          <p>[11:37 AM, 11/18/2020] Vanshika: Each year, farmers around the world decide what to plant in their fields. The seeds they choose matter greatly; livelihoods and food security, for the farmer and others linked by the global food system, are at stake. In plant breeding, the use of high-quality seeds reduces costs of field experiments and increases the probability to identify a better crop variety. So here, we will develop a software which will determine the seed quality based on image processing, computer vision and artificial intelligence. The parameters that will be taken into consideration texture, shape, size and colour.
+The existing methods to test the seed quality involve methods based on spectrometry and X-ray imaging techniques. But the materials required in this mostly are not available with the farmers when such complex methods are used.
+[11:38 AM, 11/18/2020] Ravi: </p>
+          <div class="next-page-container">
+            <button type="button" name="button" class="next-btn" id="next4">Next</button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-5" id="section-5">
+
+      <div class="section-1-video section-2-video">
+        <video src="{% static 'videos/v1.mp4' %}" autoplay muted loop>
+
+        </video>
+      </div>
+
+      <div class="section-2-info">
+        <div class="section-2-info-container">
+
+
+          <div class="section-2-info-header">
+            <img src="{% static 'videos/backarrow.png' %}" alt="" class="back-btn" id="back5">
+            <h2>Crop Monitoring</h2>
+          </div>
+          <p>Continuous crop monitoring is a major problem. Monitoring is required for Scouting land and crops, Checking for weeds, Monitoring overall crop health, detecting irregularities in density of crops, detecting rodents, etc. •	Here, in this project we focus primarily on three parameter which are crop discoloration, density and rodent detection.
+            Using continuous monitoring cameras each frame will be processed using software to achieve the desired result.
+	          We have developed a code for detecting discoloration of leaves in the field. In case there is an infection detected in any plant a notification will be sent.
+          </p>
+          <form class=""  method="post" id="predict-crop-form">
+            <button type="button" name="button" id="video-demo-btn">Take Demo</button>
+          </form>
+          <p>There is not much research done in detecting crop density till now. We aim to develop a software using computer vision technology and artificial intelligence to detect any discrepancy in the density of a crop. It is still a work in progress.</p>
+          <p>One of the latest developments is the increase in the use of small, unmanned aerial vehicles (UAVs), commonly known as drones, for agriculture
+            Drones collect raw data and translate it with algorithms into useful information. Therefore, they can be used for various applications in farming. One of these parameters is plant density.
+            Drones  have recording devices such as RGB cameras, infrared cameras, and other sensors.
+            Flying over the field, the drone takes high-resolution pictures with a camera or sensor.
+            But drones are a secondary concern as the necessity as of now is to develop a software which is useful and compatible based on the needs.
+          </p>
+          <div class="next-page-container">
+            <button type="button" name="button" class="next-btn" id="next5">Next</button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-6" id="section-6">
+
+      <div class="section-1-video section-2-video">
+        <video src="{% static 'videos/v1.mp4' %}" autoplay muted loop>
+
+        </video>
+      </div>
+
+      <div class="section-2-info">
+
+        <div class="section-2-info-header">
+          <img src="{% static 'videos/backarrow.png' %}" alt="" class="back-btn" id="back6">
+          <h2>Thank you!</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+  <script src="{% static 'index.js' %}" charset="utf-8"></script>
+
+  </body>
+</html>
